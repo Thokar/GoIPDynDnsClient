@@ -7,6 +7,7 @@ using System.Linq;
 using System.ServiceProcess;
 using System.Text;
 using System.Threading;
+using System.Timers;
 
 namespace GoIPDynDnsClient.WindowsService
 {
@@ -15,8 +16,9 @@ namespace GoIPDynDnsClient.WindowsService
 
     private AutoResetEvent AutoEventInstance { get; set; }
     private StatusChecker StatusCheckerInstance { get; set; }
-    private Timer StateTimer { get; set; }
+    private System.Timers.Timer ServiceTimer { get; set; }
     public int TimerInterval { get; set; }
+    private bool TimerTaskSuccess;
 
 
     public Service1()
@@ -32,37 +34,52 @@ namespace GoIPDynDnsClient.WindowsService
 
     protected override void OnStart(string[] args)
     {
-      AutoEventInstance = new AutoResetEvent(false);
-      StatusCheckerInstance = new StatusChecker();
 
-      // Create the delegate that invokes methods for the timer.
-      TimerCallback timerDelegate =
-          new TimerCallback(StatusCheckerInstance.CheckStatus);
-
-      // Create a timer that signals the delegate to invoke 
-      // 1.CheckStatus immediately, 
-      // 2.Wait until the job is finished,
-      // 3.then wait 5 minutes before executing again. 
-      // 4.Repeat from point 2.
-      Console.WriteLine("{0} Creating timer.\n",
-          DateTime.Now.ToString("h:mm:ss.fff"));
-      //Start Immediately but don't run again.
-      StateTimer = new Timer(timerDelegate, AutoEventInstance, 0, Timeout.Infinite);
-      while (StateTimer != null)
+      try
       {
-        //Wait until the job is done
-        AutoEventInstance.WaitOne();
-        //Wait for 5 minutes before starting the job again.
-        StateTimer.Change(TimerInterval, Timeout.Infinite);
+        //
+        // Create and start a timer.
+        //
+        ServiceTimer = new System.Timers.Timer();
+        ServiceTimer.Interval = 60 * 60 * 1000;
+        ServiceTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.m_mainTimer_Elapsed);
+        ServiceTimer.AutoReset = false;  // makes it fire only once
+        ServiceTimer.Enabled = true;
+        ServiceTimer.Start(); // Start
+        TimerTaskSuccess = false;
       }
-      //If the Job somehow takes longer than 5 minutes to complete then it wont matter because we will always wait another 5 minutes before running again.
+      catch (Exception)
+      {
+
+        throw;
+      }
+
+    }
+
+    private void m_mainTimer_Elapsed(object sender, ElapsedEventArgs e)
+    {
+      try
+      {
+        GoIPDynDnsClient.Program.MainLogic();
+      }
+      catch (Exception x)
+      {
+      }
+      finally
+      {
+
+        if (null != ServiceTimer)
+        {
+          ServiceTimer.Start(); // re - enable the timer
+        }
+      }
     }
 
     protected override void OnStop()
     {
-      StateTimer.Dispose();
+      ServiceTimer.Enabled = false;
+      ServiceTimer.Dispose();
+      ServiceTimer = null;
     }
-
-
   }
 }
