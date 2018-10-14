@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoIPDynDnsClient", "GoIPDynDnsClient.csproj", "{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoIPDynDnsClient", "GoIPDynDnsClient\GoIPDynDnsClient.csproj", "{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoIPDynDnsClient.WindowsService", "GoIPDynDnsClient.WindowsService\GoIPDynDnsClient.WindowsService.csproj", "{36E24FEE-125D-441F-874E-DBEF7221CC0B}"
 EndProject
