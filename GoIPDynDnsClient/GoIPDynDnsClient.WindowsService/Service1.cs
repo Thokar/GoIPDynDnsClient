@@ -41,12 +41,13 @@ namespace GoIPDynDnsClient.WindowsService
         // Create and start a timer.
         //
         ServiceTimer = new System.Timers.Timer();
-        ServiceTimer.Interval = 60 * 60 * 1000;
+        ServiceTimer.Interval = 1 * 1000;
         ServiceTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.m_mainTimer_Elapsed);
         ServiceTimer.AutoReset = false;  // makes it fire only once
         ServiceTimer.Enabled = true;
         ServiceTimer.Start(); // Start
         TimerTaskSuccess = false;
+
       }
       catch (Exception)
       {
@@ -60,6 +61,8 @@ namespace GoIPDynDnsClient.WindowsService
     {
       try
       {
+        Console.WriteLine("Start logic");
+        ServiceTimer.Interval = 60 * 60 * 1000;
         GoIPDynDnsClient.Program.MainLogic();
       }
       catch (Exception x)
