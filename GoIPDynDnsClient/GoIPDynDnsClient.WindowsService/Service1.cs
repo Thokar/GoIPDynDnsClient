@@ -64,6 +64,7 @@ namespace GoIPDynDnsClient.WindowsService
       }
       catch (Exception x)
       {
+        Console.WriteLine(x);
       }
       finally
       {

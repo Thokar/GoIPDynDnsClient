@@ -12,3 +12,4 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\bin\Release\GoIPDy
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.csproj.CoreCompileInputs.cache
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.dll
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.csprojAssemblyReference.cache
