@@ -9,3 +9,5 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csproj.CopyComplete
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.exe
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.ProjectInstaller.resources
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csproj.GenerateResource.cache
