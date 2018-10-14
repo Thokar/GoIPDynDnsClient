@@ -9,6 +9,5 @@ namespace GoIPDynDnsClient
     public string username;
     public string password;
     public string subdomain;
-    public string ip;
   }
 }

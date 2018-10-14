@@ -14,10 +14,14 @@ namespace GoIPDynDnsClient
       try
       {
         var c = new Config();
-        c.ip = "1.1.1.";
         c.password = "testpw";
         c.subdomain = "testdom";
         c.username = "testuser";
+
+        var resolver = new IPResolve();
+        var ip = resolver.ResolveIP();
+
+        Console.WriteLine(ip);
 
         var xs = new XmlSerializer(typeof(Config));
 
@@ -41,7 +45,7 @@ namespace GoIPDynDnsClient
         if (result != null)
         {
           var wc = new WebCall();
-          var log = wc.Update(result.username, result.password, result.subdomain, result.ip);
+          var log = wc.Update(result.username, result.password, result.subdomain, ip);
           Console.WriteLine(log);
         }
       }
