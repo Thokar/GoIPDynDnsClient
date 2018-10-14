@@ -10,7 +10,12 @@ namespace GoIPDynDnsClient
   {
     public static void Main(string[] args)
     {
+      MainLogic();
 
+    }
+
+    public static void MainLogic()
+    {
       try
       {
         var c = new Config();
@@ -54,7 +59,6 @@ namespace GoIPDynDnsClient
 
         Console.WriteLine(e);
       }
-     
     }
   }
 }

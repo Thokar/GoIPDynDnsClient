@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoIPDynDnsClient", "GoIPDynDnsClient.csproj", "{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoIPDynDnsClient.WindowsService", "GoIPDynDnsClient.WindowsService\GoIPDynDnsClient.WindowsService.csproj", "{36E24FEE-125D-441F-874E-DBEF7221CC0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07316DF2-7DC8-4E17-B3D6-7FB1A49A79FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36E24FEE-125D-441F-874E-DBEF7221CC0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E24FEE-125D-441F-874E-DBEF7221CC0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E24FEE-125D-441F-874E-DBEF7221CC0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E24FEE-125D-441F-874E-DBEF7221CC0B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,0 +1,7 @@
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\bin\Release\Config.xml
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\bin\Release\GoIPDynDnsClient.exe.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\bin\Release\GoIPDynDnsClient.exe
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\bin\Release\GoIPDynDnsClient.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.csproj.CoreCompileInputs.cache
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.exe
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Release\GoIPDynDnsClient.pdb

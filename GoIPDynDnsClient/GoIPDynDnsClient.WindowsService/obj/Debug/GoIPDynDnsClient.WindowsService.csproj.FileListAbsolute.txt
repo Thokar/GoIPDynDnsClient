@@ -1,0 +1,11 @@
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\Config.xml
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.WindowsService.exe
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.WindowsService.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.exe
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.exe.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csprojAssemblyReference.cache
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csproj.CoreCompileInputs.cache
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csproj.CopyComplete
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.exe
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.pdb
