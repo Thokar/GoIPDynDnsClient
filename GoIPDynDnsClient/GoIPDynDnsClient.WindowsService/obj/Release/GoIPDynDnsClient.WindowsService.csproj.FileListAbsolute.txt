@@ -11,3 +11,10 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Release\GoIPDynDnsClient.WindowsService.csproj.CopyComplete
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Release\GoIPDynDnsClient.WindowsService.exe
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Release\GoIPDynDnsClient.WindowsService.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\log4net.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\GoIPDynDnsClient.WindowsService.exe.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\log4net.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\Microsoft.Practices.ServiceLocation.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\log4net.xml
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\Microsoft.Practices.ServiceLocation.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Release\Microsoft.Practices.ServiceLocation.xml

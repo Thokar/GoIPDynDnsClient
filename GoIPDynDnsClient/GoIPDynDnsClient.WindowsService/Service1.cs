@@ -13,13 +13,10 @@ namespace GoIPDynDnsClient.WindowsService
 {
   public partial class Service1 : ServiceBase
   {
+    private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
-    private AutoResetEvent AutoEventInstance { get; set; }
-    private StatusChecker StatusCheckerInstance { get; set; }
     private System.Timers.Timer ServiceTimer { get; set; }
     public int TimerInterval { get; set; }
-    private bool TimerTaskSuccess;
-
 
     public Service1()
     {
@@ -34,40 +31,33 @@ namespace GoIPDynDnsClient.WindowsService
 
     protected override void OnStart(string[] args)
     {
-
       try
       {
-        //
-        // Create and start a timer.
-        //
         ServiceTimer = new System.Timers.Timer();
         ServiceTimer.Interval = 1 * 1000;
-        ServiceTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.m_mainTimer_Elapsed);
+        ServiceTimer.Elapsed += new System.Timers.ElapsedEventHandler(this.DoWork);
         ServiceTimer.AutoReset = false;  // makes it fire only once
         ServiceTimer.Enabled = true;
         ServiceTimer.Start(); // Start
-        TimerTaskSuccess = false;
-
       }
       catch (Exception)
       {
-
         throw;
       }
-
     }
 
-    private void m_mainTimer_Elapsed(object sender, ElapsedEventArgs e)
+    private void DoWork(object sender, ElapsedEventArgs e)
     {
       try
       {
-        Console.WriteLine("Start logic");
+        log.Info("Start logic");
+
         ServiceTimer.Interval = 60 * 60 * 1000;
-        GoIPDynDnsClient.Program.MainLogic();
+        GoIPDynDnsClient.Program.MainLogic(log);
       }
       catch (Exception x)
       {
-        Console.WriteLine(x);
+        log.Error("Exception" + e);
       }
       finally
       {

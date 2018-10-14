@@ -1,0 +1,7 @@
+2018-10-14 15:45:52,120 [1] INFO GoIPDynDnsClient.WindowsService.Program - Starting debug mode
+2018-10-14 15:45:53,156 [4] INFO GoIPDynDnsClient.WindowsService.Service1 - Start logic
+2018-10-14 15:45:53,362 [4] INFO GoIPDynDnsClient.WindowsService.Service1 - 87.123.103.26
+2018-10-14 15:45:53,845 [4] ERROR GoIPDynDnsClient.WindowsService.Service1 - System.Net.WebException: Der Remoteserver hat einen Fehler zurückgegeben: (403) Unzulässig.
+   bei System.Net.HttpWebRequest.GetResponse()
+   bei GoIPDynDnsClient.WebCall.Update(String username, String password, String subdomain, String ip) in C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\WebCall.cs:Zeile 23.
+   bei GoIPDynDnsClient.Program.MainLogic(ILog log) in C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\Program.cs:Zeile 53.

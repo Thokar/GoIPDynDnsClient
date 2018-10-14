@@ -13,3 +13,7 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynD
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\bin\Debug\GoIPDynDnsClient.dll.config
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\bin\Debug\GoIPDynDnsClient.dll
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\bin\Debug\log4net.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\bin\Debug\log4net.xml
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.csprojAssemblyReference.cache
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.csproj.CopyComplete

@@ -9,18 +9,18 @@ namespace GoIPDynDnsClient.WindowsService
   public class StatusChecker
   {
 
-    public StatusChecker()
-    {
-    }
+    ////public StatusChecker()
+    ////{
+    ////}
 
-    // This method is called by the timer delegate.
-    public void CheckStatus(Object stateInfo)
-    {
-      AutoResetEvent autoEvent = (AutoResetEvent)stateInfo;
+    ////// This method is called by the timer delegate.
+    ////public void CheckStatus(Object stateInfo)
+    ////{
+    ////  AutoResetEvent autoEvent = (AutoResetEvent)stateInfo;
 
-      GoIPDynDnsClient.Program.MainLogic();
+    ////  //GoIPDynDnsClient.Program.MainLogic();
 
-      autoEvent.Set();
-    }
+    ////  autoEvent.Set();
+    ////}
   }
 }

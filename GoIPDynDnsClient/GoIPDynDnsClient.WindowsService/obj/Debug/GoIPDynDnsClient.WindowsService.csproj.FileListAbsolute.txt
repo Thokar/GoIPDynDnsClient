@@ -11,3 +11,10 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\obj\Debug\GoIPDynDnsClient.WindowsService.csproj.GenerateResource.cache
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.dll
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.dll.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\log4net.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\GoIPDynDnsClient.WindowsService.exe.config
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\log4net.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\log4net.xml
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\Microsoft.Practices.ServiceLocation.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\GoIPDynDnsClient.WindowsService\bin\Debug\Microsoft.Practices.ServiceLocation.xml

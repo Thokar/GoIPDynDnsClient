@@ -10,11 +10,11 @@ namespace GoIPDynDnsClient
   {
     public static void Main(string[] args)
     {
-      MainLogic();
+      //MainLogic();
 
     }
 
-    public static void MainLogic()
+    public static void MainLogic(log4net.ILog log)
     {
       try
       {
@@ -26,7 +26,7 @@ namespace GoIPDynDnsClient
         var resolver = new IPResolve();
         var ip = resolver.ResolveIP();
 
-        Console.WriteLine(ip);
+        log.Info(ip);
 
         var xs = new XmlSerializer(typeof(Config));
 
@@ -50,14 +50,13 @@ namespace GoIPDynDnsClient
         if (result != null)
         {
           var wc = new WebCall();
-          var log = wc.Update(result.username, result.password, result.subdomain, ip);
-          Console.WriteLine(log);
+          var logData = wc.Update(result.username, result.password, result.subdomain, ip);
+          log.Info(logData);
         }
       }
       catch (Exception e)
       {
-
-        Console.WriteLine(e);
+        log.Error(e);
       }
     }
   }
