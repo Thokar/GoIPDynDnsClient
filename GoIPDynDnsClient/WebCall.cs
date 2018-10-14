@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -16,11 +17,15 @@ namespace GoIPDynDnsClient
       return baseUrl + string.Format("username={0}&password={1}&subdomain={2}&ip={3}", username, password, subdomain, ip);
     }
 
-    public void Update(string username, string password, string subdomain, string ip)
+    public string Update(string username, string password, string subdomain, string ip)
     {
       var url = this.ConstructUrl(username, password, subdomain, ip);
       HttpWebRequest request = WebRequest.Create(url) as HttpWebRequest;
       request.Method = "GET";
+      HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+      Stream reply = response.GetResponseStream();
+      StreamReader readReply = new StreamReader(reply);
+      return readReply.ReadToEnd();
     }
   }
 }

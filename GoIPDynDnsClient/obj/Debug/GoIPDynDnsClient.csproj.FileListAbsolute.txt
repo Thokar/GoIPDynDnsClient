@@ -5,3 +5,4 @@ C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.csprojAs
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.csproj.CoreCompileInputs.cache
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.exe
 C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\obj\Debug\GoIPDynDnsClient.pdb
+C:\Develop\GoIPDynDnsClient\GoIPDynDnsClient\bin\Debug\Config.xml

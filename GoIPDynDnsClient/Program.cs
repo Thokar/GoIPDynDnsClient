@@ -40,7 +40,8 @@ namespace GoIPDynDnsClient
       if (result != null)
       {
         var wc = new WebCall();
-        wc.Update(c.username, c.password, c.subdomain, c.ip);
+        var log = wc.Update(c.username, c.password, c.subdomain, c.ip);
+        Console.WriteLine(log);
       }
     }
   }
