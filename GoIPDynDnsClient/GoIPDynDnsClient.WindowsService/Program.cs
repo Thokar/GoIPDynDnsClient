@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.ServiceProcess;
 using System.Text;
@@ -16,6 +17,12 @@ namespace GoIPDynDnsClient.WindowsService
     /// </summary>
     static void Main()
     {
+
+      string path = System.Reflection.Assembly.GetExecutingAssembly().Location;
+      path = System.IO.Path.GetDirectoryName(path);
+      //Directory.SetCurrentDirectory(path);
+      //Environment.CurrentDirectory = System.AppDomain.CurrentDomain.BaseDirectory;
+      Environment.CurrentDirectory = path;
 
 #if DEBUG
 
